@@ -23,7 +23,7 @@
 .navbar-default .navbar-brand:hover{cursor: default;color: white;}
 #nav-basic {margin-right: 200px;}
 .navbar-default .navbar-nav>li>a{display:block;color: white;padding: 5px 10px;height: 30px;margin: 10px}
-.navbar-default .navbar-nav>li>a:hover,a:focus,a:active{color:white;border-bottom: 2px solid white;cursor:pointer;font-weight: bold; }
+.navbar-default .navbar-nav>li>a:hover,a:focus,a:active{color:white;border-bottom: 2px solid white;cursor:pointer; }
 #wallpaper:hover{background-color: #bbb;}
 #wallpaper:hover a{border-bottom: none;cursor: text;}
 #wallpaper:hover div{display: block;}
