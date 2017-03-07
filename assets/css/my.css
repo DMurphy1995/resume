@@ -93,6 +93,109 @@ overflow: auto;
     width: 2%;
 }
 .reveal__10 { opacity: 0.1;}
+*{padding: 0;margin: 0}
+#frame{height: 100%;}
+.container-fluid{padding: 0;}
+.navbar{
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(250,250,250,0.4);
+  z-index: 100;
+}
+.navbar *{height: 50px;}
+.navbar-default {border-color: transparent;}
+.navbar-default>li a{color: white;}
+.navbar-default .navbar-brand{
+  font-size: 40px;
+  padding: 5px 40px;
+  font-weight: bold;
+  line-height: 40px;
+  height: 50px;
+  color: white;
+}
+.navbar-default .navbar-brand:hover{cursor: default;color: white;}
+#nav-basic {margin-right: 200px;}
+.navbar-default .navbar-nav>li>a{display:block;color: white;padding: 5px 10px;height: 30px;margin: 10px}
+.navbar-default .navbar-nav>li>a:hover,a:focus,a:active{color:white;border-bottom: 2px solid white;cursor:pointer;font-weight: bold; }
+#wallpaper:hover{background-color: #bbb;}
+#wallpaper:hover a{border-bottom: none;cursor: text;}
+#wallpaper:hover div{display: block;}
+#wallpaper_intr {
+  display: none;
+}
+#wallpaper_intr ul{
+background-color: white;
+list-style: none;
+overflow: auto;
+position: absolute;
+top: 50px;
+right: 0;
+width: 200px;
+height: auto;
+}
+#wallpaper_intr li{
+	margin: 10px 10px;
+  height: 30px;
+  border-bottom:1px dotted #bbb; 
+}
+#wallpaper_intr li a{
+	margin: 0 10px;
+	text-decoration: none;
+	background-color:white;
+	color: #963;
+	font-weight: normal;
+}
+#wallpaper_intr #author_weibo:hover{cursor: pointer;font-weight: bold;}
+.carousel{height: 100%;overflow: hidden;}
+.carousel-text{
+	position: absolute;
+	width: 100%;
+	color: white;
+	top: 30%;
+	z-index: 10;
+}
+.carousel-text *{padding: 0;margin: 0}
+.carousel-title{
+	position: absolute;
+	left: 15%;
+}
+.carousel-title p:hover{cursor: pointer;}
+.carousel-content1{left: 25%;position: absolute;width: 25%}
+.carousel-content2{right: 20%;position: absolute;background-color: rgba(250,250,250,0.3);padding: 20px;margin-top: -20px;}
+.reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.reveal .reveal__cover {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    margin: 2px;
+    width: calc(100% + 250px);
+}
+.reveal .reveal__cover.reveal__uncovered {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: calc(100% + 250px);
+    margin: 2px;
+    transition: left 2500ms ease-out 0ms;
+}
+
+.reveal__cover-section {
+    height: 100%;
+    float: right;
+    /* NOTE: Background must match existing background */
+    /*background: #000;*/
+    background: #fff;
+    width: 2%;
+}
+.reveal__10 { opacity: 0.1;}
 .reveal__20 {opacity: 0.2;}
 .reveal__30 {opacity: 0.3;}
 .reveal__40 {opacity: 0.4;}
