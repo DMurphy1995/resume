@@ -102,7 +102,7 @@ function startOnePage(myInput){
         })
     
 }
-jQuery(function () {
+$(function () {
     var options = {
         id: 'box'
         , auto: false
