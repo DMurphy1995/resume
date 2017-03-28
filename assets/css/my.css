@@ -1,5 +1,16 @@
 *{padding: 0;margin: 0}
-#frame{height: 100%;}
+html,body {
+    height: 100%;
+    overflow:hidden;
+}
+#frame,.op-section,.content{height: 100%;width: auto;}
+.op-section{
+  background-color: #000;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  background-image: url(../img/1.jpg);
+}
 .container-fluid{padding: 0;}
 .navbar{
   position: fixed;
@@ -23,7 +34,7 @@
 .navbar-default .navbar-brand:hover{cursor: default;color: white;}
 #nav-basic {margin-right: 200px;}
 .navbar-default .navbar-nav>li>a{display:block;color: white;padding: 5px 10px;height: 30px;margin: 10px}
-.navbar-default .navbar-nav>li>a:hover,a:focus,a:active{color:white;border-bottom: 2px solid white;cursor:pointer; }
+.navbar-default .navbar-nav>li>a:hover,a:focus,a:active{color:white;border-bottom: 2px solid white;cursor:pointer;}
 #wallpaper:hover{background-color: #bbb;}
 #wallpaper:hover a{border-bottom: none;cursor: text;}
 #wallpaper:hover div{display: block;}
@@ -53,7 +64,7 @@ height: auto;
 	font-weight: normal;
 }
 #wallpaper_intr #author_weibo:hover{cursor: pointer;font-weight: bold;}
-.carousel{height: 100%;overflow: hidden;}
+.content {height: 100%;position: relative;}
 .carousel-text{
 	position: absolute;
 	width: 100%;
