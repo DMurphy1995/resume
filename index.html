@@ -3,68 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>个人简历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
     <!--[if lt IE 9]>
-    <link href="http://fonts.useso.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.useso.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.useso.com/css?family=Droid+Sans:400" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.useso.com/css?family=Droid+Sans:700" rel="stylesheet" type="text/css" />
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
+    <title>个人简历</title>
     <link rel="shortcut icon" href="" type="image/x-icon" />
       <!-- Css files -->   
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/my.css">
+
 </head>
 <body>
   <div id="view">
     <div id="frame">
       <div class="op-section">
-          <div id="carousel-example-generic"class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-               <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-text">
-                  <div class="carousel-title "><p>Personal</p></div>
-                  <div class="carousel-content1">
-                       <p>1995.10.17</p>
-                       <h1>Daphny Murphy</h1>
-                       <p>Nantong,Jiangsu</p>
-                       <br/>
-                       <em>If you are worried about something happening,then it is more likely to occur.</em>  
-                  </div>
-                  <div class="carousel-content2">
-                    <div class="box">
-                       <h2>NJ Normal University</h2>
-                       <b>Major:Software engineering</b>
-                       <p>Degree:Bachelor</p>
-                       <br/>
-                       <b>JOB OBJECTIVE：front-end Web developer</b>
-                       <p><a href="mailto:#">E-mail:d_murphy95@163.com</a></p>
-                       <p>Tel:15651886168</p>
-                    </div>   
-                  </div>
-              </div>
-              <div class="carousel-inner" role="listbox"> 
-                  <div class="item active">
-                      <img src="assets/img/1.jpg">
-                  </div>
-                  <div class="item">
-                      <img src="assets/img/2.jpg">
-                  </div>
-                  <div class="item">
-                      <img src="assets/img/3.jpg">
-                  </div>
-                  <div class="item">
-                      <img src="assets/img/4.jpg">
-                  </div>
-
-              </div>
-          </div>
-          <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
@@ -79,7 +33,7 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li id="nav-basic" class="btn-reveal"><a>Basic information</a></li>
+                  <li id="nav-basic" class="btn-reveal"><a href="#">Basic information</a></li>
                   <li><a id="more">Learn More</a></li>
                   <li id="wallpaper"><a >Wallpaper</a>
                       <div id="wallpaper_intr">
@@ -93,7 +47,30 @@
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
-          </nav>
+        </nav>
+        <div class="content">
+            <div class="carousel-text">
+                <div class="carousel-title "><p>Personal</p></div>
+                <div class="carousel-content1">
+                     <p>1995.10.17</p>
+                     <h1>Daphny Murphy</h1>
+                     <p>Nantong,Jiangsu</p>
+                     <br/>
+                     <em>If you are worried about something happening,then it is more likely to occur.</em>  
+                </div>
+                <div class="carousel-content2">
+                  <div class="box">
+                     <h2>NJ Normal University</h2>
+                     <b>Major:Software engineering</b>
+                     <p>Degree:Bachelor</p>
+                     <br/>
+                     <b>JOB OBJECTIVE：front-end Web developer</b>
+                     <p><a href="mailto:#">E-mail:d_murphy95@163.com</a></p>
+                     <p>Tel:15651886168</p>
+                  </div>   
+                </div>
+            </div>
+       </div>   
       </div>
       <div class="op-section second">
         <div class="fsbanner" id="m_info">
@@ -160,7 +137,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/my.js"></script>
 <script>
-   $(document).ready(function(){
+   $(function(){
       startOnePage({
         frame: "#view",
         container: "#frame",
