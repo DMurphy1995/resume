@@ -11,14 +11,6 @@ function startOnePage(myInput){
         easing = settings.easing || "swing",
         basic=$(settings.basic),
         more=$(settings.more);
-    /* 
-        Boolean values to enable/disable default scroll action
-        linked to
-            1) init()
-            2) animateScr()
-            3) scroll, keydown bound event handler
-        default: true;
-    */
     var didScroll = true,
         isFocused = true;
 
@@ -31,18 +23,6 @@ function startOnePage(myInput){
     // currently displayed section number
     // modifying this variable will cause buggy behaviors.
     var num = 0; 
-
-    // keyboard input values
-    // add more if necessary
-    var pressedKey = {};
-        pressedKey[36] = "top"; // home
-        pressedKey[38] = "up"; // upward arrow
-        pressedKey[40] = "down"; // downward arrow
-        pressedKey[33] = "up"; // page up
-        pressedKey[34] = "down"; // page down
-        pressedKey[35] = "bottom"; // end
-
-
     // init function to initialize/reassign values of the variables
     // to prevent section misplacement caused by a window resize.
     function init(){
@@ -58,9 +38,7 @@ function startOnePage(myInput){
         });
     }
     // event binding to init function
-    $(window).bind("load resize", init);
-    
-
+    $(window).bind("load", init);
     // animate scrolling effect
     var now, end;
     function animateScr(moveTo, duration, distance){
@@ -93,12 +71,12 @@ function startOnePage(myInput){
     more.click(function(){
         now = parseInt( container.css("marginTop") );
         end = - height * ( totalSections );
-        if (now!=end)    animateScr("down", 500, 1);
+        if (now!=end){ animateScr("down", 500, 1);}
     
     });
     basic.click(function(){
         now = parseInt( container.css("marginTop") );
-        if (now != 0) {animateScr("up",500,1)};
+        if (now != 0) {animateScr("up",500,1);}
         })
     
 }
@@ -114,13 +92,6 @@ $(function () {
     });
 });
 
-/**
- * perform global replacement
- * @param string source contains characters to be replaced
- * @param string search contains characters to be searched for
- * @param string replacement contains the replacement characters
- * @returns string result of replacement
- */
 function replaceAllInstances(source, search, replacement) {
     var regex = new RegExp(search, "g");
     var result = source.replace(regex, replacement);
@@ -128,7 +99,6 @@ function replaceAllInstances(source, search, replacement) {
 }
 
 $.fn.isOnScreen = function (x, y) {
-
     if (x == null || typeof x == 'undefined')
         x = 1;
     if (y == null || typeof y == 'undefined')
@@ -171,19 +141,6 @@ $.fn.isOnScreen = function (x, y) {
 
 };
 
-/*
- * Init specified element so it can be gradually revealed.
- *
- * Limitations:
- *  Only works on backgrounds with a solid color.
- *
- *  @param options = {
- *       id:'box'
- *      ,background='#ffffff' //default
- *      ,delay='0' //default
- *  }
- *
- */
 $.fn.initReveal = function (options) {
     console.log('-------------');
     console.log('selector:' + this.selector);
